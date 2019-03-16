@@ -1,0 +1,28 @@
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 20px;
+}
+
+.text {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid lightgreen;
+    width: 600px;
+    height: 550px; 
+}
+
+.p {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+q {
+    margin: 10px;
+}
+
+img {
+    margin-top: 10px;
+}
