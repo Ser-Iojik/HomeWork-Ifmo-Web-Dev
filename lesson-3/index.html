@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <legend>Введите:</legend>
+        <p>
+            <label for="text">Имя</label>
+            <input id="text" type="text" placeholder="введите имя">
+        </p>
+        <p>
+            <label for="text">Фамилия</label>
+            <input id="text" type="text" placeholder="введите имя">
+        </p>
+        <p>
+            <label for="text">Отчество</label>
+            <input id="text" type="text" placeholder="введите имя">
+        </p>
+        <legend>Ваше хобби:</legend>
+        <p>
+            <label for="text">Хобби</label>
+            <input id="text" type="text" placeholder="введите хобби:)">
+        </p>
+        <legend>Загрузите ваше фото</legend>
+        <p>
+            <input type="file" multiple accept="image/*">
+        </p>
+        <legend>Укажите дату своего рождения</legend>
+        <p>
+            <label for="date">Выбор даты</label>
+            <input id="date" min="2012-12-12" type="date">
+        </p>
+        <label>Контрольный вопрос: Назовите первую столицу Руси.</label>
+        <p>
+            <label><input name="answer" type="radio">Москва</label>
+            <label><input name="answer" type="radio">Киев</label>
+            <label><input name="answer" type="radio">Великий Новгород</label>
+        </p>
+        <legend>Отправить</legend>
+        <p>
+            <input type="submit" value="Отправить данные">
+        </p>
+    </form>
+</body>
+</html>
