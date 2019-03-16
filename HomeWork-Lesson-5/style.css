@@ -1,0 +1,22 @@
+@import url("grid.css");
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid black;
+    height: 100px;
+    margin: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+.card_vertical {
+    border: 1px solid black;
+    height: 324px;
+    margin: 5px;
+}
