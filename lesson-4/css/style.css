@@ -1,0 +1,39 @@
+body {
+    background: url(fon-3.jpg);
+    background-attachment: fixed;
+    background-repeat: round;
+    background-size: auto;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.news-container {
+    margin: 40px;
+    width: 66.6%;
+    height: auto;
+    background-color: white;
+    border: 3px #691ae7 dashed;
+}
+
+.div {
+    width: auto;
+    margin: 20px;
+    border: #691ae7;
+}
+
+a.a {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(71, 72, 179);
+}
+
+a.a:hover {
+    background: rgb(105, 76, 232);
+}
+
+a.a:active {
+    background: rgb(64, 35, 131);
+}
