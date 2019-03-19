@@ -31,8 +31,6 @@ a {
 
 .container {
 	opacity: 0;
-	pointer-events: none;
- 	position: fixed; 
     top: 0;
     right: 0;
     bottom: 0;
@@ -43,8 +41,6 @@ a {
 
 .container:target {
     opacity: 1;
-	pointer-events: auto;
-    overflow-y: auto;
 }
 
 .container-first {
@@ -87,7 +83,6 @@ a {
 
 .close:hover,.close:focus {
     color: #000;
-    cursor: pointer;
 }
 
 
