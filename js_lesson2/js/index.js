@@ -93,4 +93,22 @@ console.log('-------------------------------------');
 
 // Задание 6
 
+// Задание 7
 
+let month = new Date().getMonth(); 
+
+if(month == 11 || month == 0 || month == 1) {
+    console.log("Winter");
+} else {
+    if(month == 2 || month == 3 || month == 4) {
+    console.log("Spring");
+    } else {
+        if(month == 5 || month == 6 || month == 7) {
+            console.log("Summer");
+        } else {
+            if(month == 8 || month == 9 || month == 10) {
+            console.log("Autumn");
+            }
+        }
+    }
+} 
