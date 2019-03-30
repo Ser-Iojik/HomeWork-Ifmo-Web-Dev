@@ -1,5 +1,14 @@
 console.log('--------------------Задание1--------------------');
 
+let arr1 = [1,2,5,8,-1,5,2,4,3,5,2,9,-2,5];
+
+for (let i = 0; i < arr1.length; i++) {
+    for (let j = 1; j < arr1.length; j++) {
+        if (arr1[i] + arr1[j] == 7) {
+            console.log("M=" + arr1[i] + " N=" + arr1[j]);
+        }
+    }
+}
 
 // Задание 1
 
