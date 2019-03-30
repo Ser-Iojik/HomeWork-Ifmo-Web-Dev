@@ -220,7 +220,9 @@ nav.right__menu {
 
 /* end Стиль для фона */
 
-.container_main {
+
+
+.container_main-960 {
     max-width: 960px;
     margin: 0 auto;
 }
@@ -268,8 +270,9 @@ nav.right__menu {
 }
 
 .block-1__line-left {
-    height: 3px;
+    height: 2px;
     width: 75%;
+    margin-right: 25%;
     margin-top: 1.9em;
     margin-bottom: 1em;
     background: #FECF00;
@@ -292,7 +295,7 @@ nav.right__menu {
     width: 75%;
     margin-top: 1.9em;
     margin-bottom: 1em;
-    margin-left: 25%;
+    margin-right: 25%;
     background: #FECF00;
 }
 
@@ -300,12 +303,12 @@ nav.right__menu {
     height: 2em;
     font-size: 2em;
     color: #FE6C00;
-    text-align: right;    
+    text-align: left;    
 }
 
 .block-1__text-right {
     height: 10em;
-    text-align: right;        
+    text-align: left;        
 }
 
 .block-2 {
@@ -319,37 +322,11 @@ nav.right__menu {
     transition-duration: 0.5s;
 }
 
-.block-2:hover {
-    width: 51%;
-    height: 19em;
-}
-
 .container_block-max-width {
     display: flex;
     flex-direction: row;
     height: 20em;
     margin-top: 2em;
-}
-
-.block-1__line-right {
-    height: 3px;
-    width: 75%;
-    margin-top: 1.9em;
-    margin-bottom: 1em;
-    margin-left: 25%;
-    background: #FECF00;
-}
-
-.block-1__title-right {
-    height: 2em;
-    font-size: 2em;
-    color: #FE6C00;
-    text-align: right;    
-}
-
-.block-1__text-right {
-    height: 10em;
-    text-align: right;        
 }
 
 .container_block-min-width {
@@ -364,25 +341,56 @@ nav.right__menu {
 .container_block-advantages {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
     height: 40em;
+    background: -webkit-linear-gradient(45deg,#3c3bee 0%,#3bebde 100%);
+}
+
+.container_block-advantages-960 {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container-block-advantages-title {
+    text-align: center;
+    font-size: 3em;
+    color: #FE6C00;
+    margin: 1em;
 }
 
 .block-advantages {
     display: flex;
     flex-direction: row;
-    height: 10em;
-    margin-top: 3em;
+    height: 8em;
 }
 
-.block-1__advantages {
-    width: 8em;
-    height: 8em;
-    margin-right: 5%;
+ /* border dashed необязателен, сделано сейчас для наглядности */
+
+.block-1__advantages_img {
+    width: 7em;
+    height: 7em;
     margin-left: 5%;
-    background-image: url(../img/02.jpg);
+    border: 2px dashed #1047A9;
+    border-radius: 50%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.block-1__advantages_img-1 {
+    /* background-image: url(../img/04.png); */
+}
+
+.block-1__advantages_img-2 {
+    /* background-image: url(../img/05.jpg); */
+}
+
+.block-1__advantages_img-3 {
+    /* background-image: url(../img/06.jpg); */
+}
+
+.block-1__advantages_img-4 {
+    /* background-image: url(../img/07.jpg); */
 }
 
 .block-2__advantages {
@@ -391,14 +399,14 @@ nav.right__menu {
 }
 
 .block-2__advantages-title {
-    height: 2em;
+    height: 1.5em;
     font-size: 2em;
-    color: #FE6C00;
+    color: #FECF00;
     text-align: left
 }
 
 .block-2__advantages-text {
-    height: 6em;
+    height: 4em;
     text-align: left;
 }
 
@@ -413,6 +421,93 @@ footer {
 
 /* end Стиль для подвала */
 
+/* Стиль для вкладки контакты */
+
+.contacts__map {
+    width: 100%;
+    height: 25em;
+    background: #22eb76;
+}
+
+.contacts__main {
+    width: 100%;
+}
+
+.contacts__main-960 {
+    display: flex;
+    flex-direction: row;
+    max-width: 960px;
+    height: 30em;
+    background: #f8f8f8;
+    margin: 0 auto;
+}
+
+.contacts__left-section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-top: 3em;
+    padding-left: 3em;
+}
+
+.adress h2 {
+    margin: 0;
+    font-weight: 520;
+}
+
+.contacts__right-section {
+    background: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-top: 3em;
+    padding-left: 3em;
+}
+
+.relation h2 {
+    margin: 0;
+    font-weight: 520;
+}
+
+.relation__forms {
+    display: flex;
+    flex-direction: row;
+}
+
+.relation__forms-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.relation__forms-left input#name {
+    height: 2em;
+    margin: 1em;
+}
+
+.relation__forms-left input#lastname {
+    height: 2em;
+    margin: 1em;
+}
+
+.relation__forms-left input#number {
+    height: 2em;
+    margin: 1em;
+}
+
+.relation__forms-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.relation__forms-right input#comment {
+    height: 11em;
+    width: 20em;
+    margin: 1em;
+}
+
+
+
+/* end Стиль для вкладки контакты */
 
 /* Медиа запросы */
 
