@@ -23,14 +23,12 @@ console.log(printNum(113));
 console.log('--------------------Задание3--------------------');
 
 function range(start, end, step) {
-    console.log(start);
-    for (let i = start; i < end / step; i++) {
-        if (step >= 1) {
-            start += step;
-            console.log(start);
-        } 
+    let arr = [];
+    for (let i = start; i <= end; i += step) {
+        arr.push(i);
+        }
+    return console.log(arr);
     }
-}
 
 range(0,11,2);
 
