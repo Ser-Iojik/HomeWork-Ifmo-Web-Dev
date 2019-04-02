@@ -14,17 +14,10 @@ arrays_equal([1,2,3,4,4], [1,2,3,4]);
 console.log('--------------------Задание2--------------------');
 
 function printNum(num) {
-    if (num >= 10) {
-        console.log(num % 10 + Math.floor(num / 10));
-        printNum(num - 1);
-    } else {
-        if (num <= 9 && num >= 0) {
-            console.log(num);
-            printNum(num - 1);
-        }
-    }
+    if (num == 0) return 0; 
+    return num % 10 + printNum(parseInt(num / 10));
 }
-printNum(32);
+console.log(printNum(113));
 
 // Задание 3
 console.log('--------------------Задание3--------------------');
