@@ -44,13 +44,11 @@ function count(a) {
         if (a % 10 === 1) {
             return console.log(a + " товар");
         } else {
-            if (a % 10 === 2,3,4) {
             return console.log(a + " товара");
-            }
         }
     }
 }
 
-count(51);
+count(52);
 
 }());
