@@ -54,15 +54,17 @@ function getGoods(goods, from, to) {
         for (let key in goods[i]) {
             if (goods[i][key] >= from && goods[i][key] <= to) {
                 outArr.push(goods[i]);
+                return outArr;
+            } else {
+                console.log("Такого товара нет в прайс-листе");
             }
         }
     }
-    return outArr;
 }
 
 // можно добавить в функцию ещё один аргумент под названием cost, который будет отвечать конктерно за стоимость товара
 
-console.log(getGoods(goods, 3000, 3200));
+console.log(getGoods(goods, 2000, 2200));
 
 /* 
     Написать функцию addToCart(obj, title, countToCart) {},
@@ -88,6 +90,7 @@ function addToCart(obj, title, countToCart){
         }
     }
 };
+
 console.log(addToCart(goods, "Пианино", 17));
 
 /* 
