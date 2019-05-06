@@ -37,7 +37,7 @@ document.getElementById('addCommentBtn').addEventListener('click', function () {
 
         document.getElementById('comments').appendChild(commentBlock);
 
-        result.innerText = 'Ваш коммент успешно добавился!';
+        result.innerText = 'Вы успешно добавили комментарий!';
 
         result.classList.remove('error');
         result.classList.add('success');
