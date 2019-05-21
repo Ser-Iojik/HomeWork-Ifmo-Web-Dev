@@ -86,7 +86,7 @@ class Player {
             this._foes.splice(i , 1);
         }
 
-        for(let i = 0; i < 10; i++) {
+        for(let i = 0; i < 1; i++) {
             let x = random(0, this._canvas._width);
             let y = random(0, this._canvas._height);
             foes.push(new Foe(this._canvas, x, y));

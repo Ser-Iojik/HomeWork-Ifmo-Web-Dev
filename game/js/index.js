@@ -6,7 +6,7 @@ function random(min, max) {
 let canvas = new Canvas();
 
 let foes = [];
-for(let i = 0; i < 10; i++)
+for(let i = 0; i < 1; i++)
 {
     let x = random(0, canvas._width);
     let y = random(0, canvas._height);
