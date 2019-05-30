@@ -4,8 +4,8 @@ echo "<br><br>";
 echo "Задание 1";
 echo "<br><br>";
 
-function strName ($str) {
-    echo basename($str, ".txt");
+function strName($str) {
+    echo basename($str, ".txt"); // someFile
 }
 
 strName('C:\OpenServer\testsite\www\someFile.txt');
@@ -58,3 +58,14 @@ echo strNotationConverter('this_is_string');
 echo "<br><br>";
 echo "Задание 4";
 echo "<br><br>";
+
+$arr_1 = [1, 3, 4, 6, 9];
+$arr_2 = [1, 3, 4, 6, 9];
+$arr_3 = [1, 3, 4, 6, 9];
+$arr_4 = [1, 3, 4, 6, 9];
+$arr_5 = [1, 3, 4, 6, 9];
+
+for ($i = 0; i < 5; i++) {
+    $random = rand(0, 9);
+    echo $random
+}
