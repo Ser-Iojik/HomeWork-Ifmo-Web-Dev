@@ -4,8 +4,8 @@ echo "<br><br>";
 echo "Задание 1";
 echo "<br><br>";
 
-function strName($str) {
-    echo basename($str, ".txt"); // someFile
+function strName ($str) {
+    echo basename($str, ".txt");
 }
 
 strName('C:\OpenServer\testsite\www\someFile.txt');
@@ -52,20 +52,29 @@ function strNotationConverter(string $str){
         return $str;       
     }      
 }
-
 echo strNotationConverter('this_is_string');
 
 echo "<br><br>";
 echo "Задание 4";
 echo "<br><br>";
 
-$arr_1 = [1, 3, 4, 6, 9];
-$arr_2 = [1, 3, 4, 6, 9];
-$arr_3 = [1, 3, 4, 6, 9];
-$arr_4 = [1, 3, 4, 6, 9];
-$arr_5 = [1, 3, 4, 6, 9];
+$array = [];
+$sumArray = [];
 
-for ($i = 0; i < 5; i++) {
-    $random = rand(0, 9);
-    echo $random
+for ($i = 0; $i < 5; $i++) {
+    for ($k = 0; $k < 5; $k++) {
+        $random = rand(0, 9);
+        array_push($array, $random);
+    }
+    print_r($array);
+    echo "<br><br>";    
+    echo "Sum = " ;
+    print_r(array_sum($array)); 
+    echo "<br><br>";
+    array_push($sumArray, array_sum($array));      
+    array_splice($array, 0);
+}
+
+$maxValue = max($sumArray);
+echo $maxValue;
 }
